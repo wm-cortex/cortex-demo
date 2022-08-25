@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+    <t t-extend="report.client_action.ControlButtons">
+        <t t-jquery="button.o_report_print" t-operation="before">
+            <button class="btn btn-primary o_report_print_direct" type="button" title="Send To Printer">Print</button>
+        </t>
+        <t t-jquery="button.o_report_print" t-operation="replace">
+            <button type="button" class="btn btn-primary o_report_print" title="PDF Download">Download</button>
+        </t>
+    </t>
+</templates>
